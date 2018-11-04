@@ -1,0 +1,61 @@
+.cookies-box {
+  color: white;
+  position: relative;
+
+  &__btn {
+    background: none;
+    min-width: 84px;
+    color: white;
+    font-size: 12px;
+    padding: 0;
+    line-height: 1;
+
+    &:hover {
+      background: #fff;
+      color: @navy-color;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    &:before,
+    &:after {
+      content: '';
+      height: 1px;
+      width: 10px;
+      background: white;
+      display: block;
+      position: absolute;
+    }
+
+    &:before {
+      transform: rotate(-44deg);
+      top: 9px;
+      left: 5px;
+    }
+
+    &:after {
+      transform: rotate(44deg);
+      top: 9px;
+      left: 5px;
+    }
+
+    &:hover {
+      background: white;
+      transform: scale(1.1);
+      &:before,
+      &:after {
+        background: @navy-color;
+
+      }
+    }
+  }
+
+}

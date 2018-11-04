@@ -1,0 +1,57 @@
+@import "../../less/variables";
+.footer {
+  color: white;
+
+  .pull-left {
+    max-width: 190px;
+    margin-right: 150px;
+  }
+
+  &-logo {
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .copyright {
+    font-size: 12px;
+    opacity: .5;
+    margin-top: 150px;
+  }
+
+  &-nav {
+    margin-right: 95px;
+    &-title {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    &-link {
+      color: @grey-color;
+
+      a {
+        color: inherit;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &-soc {
+      list-style: none;
+
+      li {
+        margin-right: 12px;
+        transition: all .2s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

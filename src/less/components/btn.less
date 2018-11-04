@@ -1,0 +1,47 @@
+@import "../variables";
+
+.btn {
+  padding: 0 20px;
+  border-radius: 70px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.25s;
+  border: none;
+  height: 45px;
+  box-shadow: 0 3px 6px rgba(0,0,0,.3);
+
+  &-ghost {
+    border: 1px solid white;
+  }
+  &-navy {
+    background: @navy-color;
+    color: white;
+
+    &:hover {
+      background: #1f365c;
+    }
+  }
+
+  &-primary {
+    background: @primary-color;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &-yellow {
+      background: @yellow-color;
+      color: @navy-color;
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+
+  &:active {
+    box-shadow: 0 3px 6px rgba(0,0,0,.3) inset;
+  }
+
+  &-small {
+    height: 28px;
+  }
+
+}

@@ -1,6 +1,7 @@
 .cookies-box {
   color: white;
   position: relative;
+  display: none;
 
   &__btn {
     background: none;
@@ -18,8 +19,8 @@
 
   &__close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
     display: block;
     width: 20px;
@@ -58,4 +59,25 @@
     }
   }
 
+  &.show {
+    display: block;
+  }
+}
+
+@media @desktop {
+  .cookies-box__close {
+    top: 3px;
+    right: 3px;
+  }
+}
+
+@media @mobile-sm {
+  .cookies-box .container {
+    flex-wrap: wrap;
+
+    .btn-ghost {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
 }

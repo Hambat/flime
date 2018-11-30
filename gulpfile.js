@@ -1,12 +1,6 @@
 "use strict";
-// 'libs/jquery/dist/jquery.js'
-var jsArr = [
-    'src/js/scripts.js'
-];
 
 var devPath = 'src/';
-
-var htmlPagesName = ['src/*.html'];
 
 var lessFilesNames = ['src/less/main.less'];
 
@@ -24,7 +18,9 @@ var gulp = require('gulp'),
     cssBase64 = require('gulp-css-base64'),
     rimraf = require('rimraf'), //для очищения папок
     rigger = require('gulp-rigger'),
-    connect = require('gulp-connect');
+    connect = require('gulp-connect'),
+    rimraf = require('rimraf'),
+    babel = require('gulp-babel');
 
 gulp.task('connect', function () {
     connect.server({
@@ -37,18 +33,16 @@ gulp.task('clean', function (cb) {
     rimraf('dist', cb);
 });
 
-gulp.task('js', function (cb) {
-    pump([
-            gulp.src(jsArr),
-            //        uglify(),
-            gulp.dest('dist/js/')
-        ],
-        cb
-    );
-});
+gulp.task('js', () =>
+    gulp.src('src/js/**/*')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(gulp.dest('dist/js/'))
+);
 
 gulp.task('html', function () {
-    gulp.src(htmlPagesName)
+    gulp.src('src/**/*.html')
         .pipe(rigger()) //Прогоним через rigger
         .pipe(connect.reload())
         .pipe(gulp.dest('dist/'))
@@ -56,7 +50,7 @@ gulp.task('html', function () {
 });
 
 gulp.task('img', function () {
-    gulp.src('src/img/*')
+    gulp.src('src/img/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'));
 });
@@ -84,7 +78,7 @@ gulp.task('css', function () {
             debug: false
         }))
         .pipe(cleancss({keepBreaks: false}))
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
         .pipe(cssBase64())
         .pipe(gulp.dest('dist/css'))
         .pipe(connect.reload())
@@ -93,11 +87,15 @@ gulp.task('css', function () {
 
 gulp.task('watch', function () {
     livereload.listen();
-    gulp.watch('src/img/*', ['img']);
+    gulp.watch('src/img/**/*', ['img']);
     gulp.watch(['src/**/*.less'], ['css']);
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch('src/fonts/*', ['fonts']);
-    gulp.watch([htmlPagesName, 'src/**/*.html'], ['html']);
+    gulp.watch(['src/**/*.html'], ['html']);
+});
+
+gulp.task('clean', function (cb) {
+    rimraf('./dist', cb);
 });
 
 gulp.task('default', ['connect', 'html', 'css', 'img', 'js', 'fonts', 'watch']);

@@ -1,277 +1,30 @@
 <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Flime</title>
-    <script src="js/scripts.js"></script>
-</head>
-<body>
-    <div class="cookies-box pdng-v-md navy-bg">
-        <div class="container flex-row flex-items-center">
-                <span class="mrgn-r-lg">
-                    We use cookies to personalize contents and ads, offer social media features, and analyze access to our website. In your browser settings you can delete any already placed cookies. Please see our privacy statement for details about how we use data.
-                </span>
-            <button type="button" class="btn btn-ghost cookies-box__btn transition-ease btn-small">Accept</button>
-        </div>
-        <div class="cookies-box__close transition-ease"></div>
-    </div>
+<html>
+	<head>
+		<title>PDF pager demo</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<h1>Demo</h1>
+		<iframe id="pdf-canvas" height="650" width="420"></iframe>
+		<iframe id="pdf-canvas-2" class="pdf-pager"></iframe>
+		<div id="callback-notes"></div>
 
-    <header class="header mrgn-t-md">
-        <div class="container flex-row flex-items-center">
-            <a href="#"><img src="img/flime_logo_light.svg" alt=""></a>
-    
-            <div class="flex-row flex-items-center flex-space-beetween mrgn-l-lg">
-                <div class="navi navi-for">
-                    <a href="#">FOR COMPANIES</a>
-                    <a href="#">FOR FREELANCERS</a>
-                </div>
-                <div class="navi">
-                    <a href="#">How it works</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">API</a>
-                    <a href="#">Relability</a>
-                    <a href="#">About us</a>
-                    <a href="#">Contacts</a>
-                </div>
-                <button
-                        type="button"
-                        class="btn btn-navy font-size-md strong"
-                >Log in/Sign up
-                </button>
-            </div>
-        </div>
-    </header>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script src="jquery.pdfpager.js"></script>
+		<script>
+			$('#pdf-canvas').pdfPager({
+				pages: 3,
+				pdfFolder: 'http://www.jasonlcrane.com/demo/pdfpager/pdfs',
+				namespace: 'test'
+			});
 
-    <section class="head-section section-mrgns">
-        <div class="container flex-row flex-space-center flex-direction-column">
-            <h1 class="head-section__h1 text-center mrgn-b-lg">
-                Streamline your freelance<br/> contracts and payments
-            </h1>
-            <div class="head-section__sub-title text-center mrgn-b-lg">
-                <strong>All-in-one platform to manage contractors. Worldwide.</strong>
-            </div>
-            <div class="text-center">
-                <button type="button" class="btn btn-primary font-size-lg">START NOW</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-mrgns">
-        <div class="container">
-            <div class="h1 text-center mrgn-b-lg2">Key features</div>
-            <ul class="classic-list flex-row text-center flex-space-center">
-                <li>
-                    <strong class="classic-list__title mrgn-b-md">Speed up freelancers engagement</strong>
-                    <p>
-                        Start a deal inviting them to join one easy-to-use platform. All the essential tools for the task setting are here to help.
-                    </p>
-                </li>
-                <li>
-                    <strong class="classic-list__title mrgn-b-md">Save time in each stage of your deal pipeline</strong>
-                    <p>
-                        Having one contract with Flime instead of dozens of contracts with every freelancer releases hours or days your talented managers and payroll accountant previously spent on tedious paperwork
-                    </p>
-                </li>
-                <li>
-                    <strong class="classic-list__title mrgn-b-md">Pay for the job done</strong>
-                    <p>
-                        Task based cross-border payments for proper freelance relations.
-                    </p>
-                </li>
-                <li>
-                    <strong class="classic-list__title mrgn-b-md">Scale your business, not papers</strong>
-                    <p>
-                        Flime automates paperwork for companies and freelancers. Manual revenue reporting? Never again.
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="relationship-section section-mrgns">
-        <div class="container">
-            <div class="h1 text-center mrgn-b-lg2">Streamline your relationships<br/> with freelancers</div>
-            <ul class="classic-list flex-row text-center">
-                <li>
-                    <strong class="classic-list__title">Sign Up</strong>
-                    <p>
-                        Set up your company profile.
-                        Get the agreement.
-                    </p>
-                </li>
-                <li>
-                    <strong class="classic-list__title">
-                        Invite your<br/>
-                        freelancers
-                    </strong>
-                    <p>
-                        Invite the people you  work with: self-employed and  freelancers from anywhere. Teammates pass through a KYC procedure.
-                    </p>
-                </li>
-                <li>
-                    <strong class="classic-list__title">
-                        Set the<br/> tasks
-                    </strong>
-                    <p>
-                        Choose from 300+ services, chat with your freelancers, discuss and agree on the terms, upload files.
-                    </p>
-                </li>
-                <li>
-                    <strong class="classic-list__title">
-                        Top-up balance
-                    </strong>
-                    <p>
-                        Via bank transfer.
-                    </p>
-                </li>
-                <li>
-                    <strong class="classic-list__title">
-                        Pay for the<br/>
-                        finished task
-                    </strong>
-                    <p>
-                        Global payments on bank cards and bank accounts. Issue large batch payments by uploading CSV.
-                    </p>
-                </li>
-                <li>
-                    <strong class="classic-list__title">
-                        Get the accounting<br/> documents
-                    </strong>
-                    <p>
-                        + Get IP rights
-                        + NDA
-                        + Secure file transfer
-                        by Amazon S3
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="silver-section pdng-v-lg3">
-        <div class="container">
-            <div class="h1 text-center mrgn-b-sm">Case studies</div>
-            <div class="sub-title text-center mrgn-b-lg font-size-lg">
-                Flime is a partner payment automation platform for publishing houses, creative teams, digital agencies, affiliate networks and retail.
-            </div>
-            <div class="flex-row">
-                <ul class="aside-nav mrgn-r-lg2">
-                    <li>
-                        <a href="#">Your business</a>
-                    </li>
-                    <li>
-                        <a href="#">Publishing houses</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Digital agencies
-                            and creative teams
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">Affiliate networks</a>
-                    </li>
-                    <li>
-                        <a href="#">Retail</a>
-                    </li>
-                </ul>
-                <div class="info-box white-bg pdng-lg mrgn-r-sm flex-child text-center">
-                    <div class="info-box__title mrgn-b-lg">
-                        <strong>Now</strong>
-                    </div>
-                    <p>
-                        I have to track payments, as well as send checks or use PayPal. It takes a lot of time
-                    </p>
-                    <p>
-                        I have a huge time hole with onboarding freelancers and their tax information and then on tax compliance and paying all the remote team.
-                    </p>
-                    <p>
-                        Payment errors interrupt our partners’ workflow making us less competitive. We mature from manual cross-border payments but have no global solution.
-                    </p>
-                    <p>
-                        Marketing campaigns start with a huge amount of manual work for our controller to onboard dozens of promoters and merchandisers.
-                    </p>
-                </div>
-                <div class="info-box primary-bg pdng-lg mrgn-l-sm flex-child text-center">
-                    <div class="info-box__title mrgn-b-lg">
-                        <strong>With Flime</strong>
-                    </div>
-                    <p>
-                        You can make hundreds of payments every week in five minutes, and your controller can do more important work.
-                    </p>
-                    <p>
-                        Handing it all to Flime obviously is a huge labor cost savings and automatically achieves complete compliance with any local or regional rules.
-                    </p>
-                    <p>
-                        You get accurate payment results offering your affiliate network the freedom to choose their desired payment methods. Streamline payments to focus on doing more business development.
-                    </p>
-                    <p>
-                        Onboarding, compliance and mass payments are on hand. Your accountant no longer has to vet payment data and manually collect tax forms. This enables you to grow and scale.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="primary-bg pdng-v-lg3">
-        <div class="container flex-row flex-direction-column flex-items-center">
-            <div class="h1 mrgn-b-sm">Request access form</div>
-            <div class="sub-title font-size-lg mrgn-b-lg_10">
-                Our customer service will contact you ASAP after submitting the form below
-            </div>
-            <form class="form flex-row flex-direction-column">
-                <div class="form-group">
-                    <label class="form-group__label" for="question">Send us a question</label>
-                    <input type="text" id="question" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label class="form-group__label" for="email">E-mail</label>
-                    <input type="email" id="email" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-yellow strong mrgn-t-md">REQUEST ACCESS</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer navy-bg pdng-v-lg3">
-        <div class="container flex-row">
-            <div class="pull-left">
-                <a href="#" class="footer-logo">
-                    <img src="img/flime_logo_white.svg" alt="">
-                </a>
-                <p>
-                    All-in-one platform<br/> to manage contractors.<br/> Worldwide.
-                </p>
-                <div class="copyright">
-                    &copy; 2018 Flime B.V. The Netherlands
-                </div>
-            </div>
-            <div class="footer-nav">
-                <div class="footer-nav-title mrgn-b-sm">Legal Resources</div>
-                <div class="footer-nav-link mrgn-b-sm"><a href="" c>Privacy Policy</a></div>
-                <div class="footer-nav-link mrgn-b-sm"><a href="">Offer Agreement</a></div>
-            </div>
-            <div class="footer-nav">
-                <div class="footer-nav-title mrgn-b-sm">Company</div>
-                <div class="footer-nav-link mrgn-b-sm"><a href="" c>How it works</a></div>
-                <div class="footer-nav-link mrgn-b-sm"><a href="">Pricing</a></div>
-                <div class="footer-nav-link mrgn-b-sm"><a href="">API</a></div>
-                <div class="footer-nav-link mrgn-b-sm"><a href="">Reliability</a></div>
-            </div>
-            <div class="footer-nav">
-                <div class="footer-nav-title mrgn-b-sm">Follow us</div>
-                <ul class="footer-nav-soc flex-row">
-                    <li><a href="#"><img src="img/fb.svg" alt=""></a></li>
-                    <li><a href="#"><img src="img/in.svg" alt=""></a></li>
-                    <li><a href="#"><img src="img/tw.svg" alt=""></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-</body>
+			/* $('#pdf-canvas-2').pdfPager({
+				config: 'demo.json',
+				onChange: function() {
+					$('#callback-notes').append('<p>onChange callback fired.</p>');
+				}
+			}); */
+		</script>
+	</body>
 </html>

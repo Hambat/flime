@@ -1,0 +1,190 @@
+.navbar {
+  .btn {
+    background: @navy-color;
+    color: white;
+  }
+}
+
+.navi {
+  a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0 10px;
+    color: @grey-color;
+    font-weight: normal;
+
+    &:hover,
+    &.active {
+      color: @navy-color;
+    }
+  }
+
+  &-for {
+    a {
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.header {
+  .btn:hover {
+    transition: all .2s ease;
+  }
+
+  .hamburger {
+      position: relative;
+      height: 20px;
+      width: 20px;
+      z-index: 5;
+      margin-left: 30px;
+      display: none;
+      span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        margin-top: -1px;
+        left: 0;
+        display: block;
+        background: @navy-color;
+        transition: .5s;
+      }
+      span:first-child {
+        top: 3px;
+      }
+      span:last-child {
+        top: 16px;
+      }
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.active {
+      span {
+        opacity: 0;
+        top: 50%;
+      }
+      span:first-child {
+        opacity: 1;
+        transform: rotate(405deg);
+      }
+      span:last-child {
+        opacity: 1;
+        transform: rotate(-405deg);
+      }
+    }
+  }
+
+  #burger {
+    display: none;
+  }
+}
+
+@media @desktop-xl {
+  .header {
+    .container {
+      position: relative;
+    }
+
+    .hamburger {
+      display: block;
+    }
+
+  }
+
+  .navi-collapse {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background: @silver-color;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+    max-width: 200px;
+    display: none;
+
+    a {
+      display: block;
+      margin-bottom: 10px;
+      padding: 5px 15px;
+      transition: all .2s ease;
+
+      &:hover {
+        background: @navy-color;
+        color: white;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &:before {
+
+    }
+
+    &.open {
+      display: block;
+    }
+  }
+}
+
+@media @mobile {
+    .header {
+      .container {
+        flex-wrap: wrap;
+      }
+
+      &-logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .mrgn-l-lg {
+        margin-left: 0;
+      }
+      .btn-login {
+        margin-right: 0;
+      }
+
+      .navi-for {
+        a {
+          padding-left: 0;
+        }
+      }
+    }
+}
+
+@media @mobile-sm {
+  .header {
+    .flex-row {
+      flex-wrap: wrap;
+    }
+
+    .navi-collapse {
+      max-width: 100%;
+    }
+
+    .navi-for {
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+
+      a {
+        font-size: 13px;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    .btn-login {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicons/favicon.png">
+    <link rel="mask-icon" href="img/favicons/favicon.svg">
+    <link rel="icon" sizes="16x16" type="image/svg+xml" href="img/favicons/favicon.svg">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Flime</title>
+    <script src="js/scripts.js"></script>
+
+</head>
+<body>
+<div class="cookies-box pdng-v-md navy-bg">
+    <div class="container flex-row flex-items-center">
+            <span class="mrgn-r-lg">
+                We use cookies to personalize contents and ads, offer social media features, and analyze access to our website. In your browser settings you can delete any already placed cookies. Please see our privacy statement for details about how we use data.
+            </span>
+        <button type="button" class="btn btn-ghost cookies-box__accept cookies-box__btn transition-ease btn-small">Accept</button>
+    </div>
+    <div class="cookies-box__close transition-ease"></div>
+</div>
+
+<header class="header mrgn-t-md">
+    <div class="container flex-row flex-items-center">
+        <a href="/flime.html" class="header-logo"><img src="img/flime_logo_light.svg" alt=""></a>
+
+        <div class="flex-row flex-items-center flex-space-beetween mrgn-l-lg">
+            <div class="navi navi-for">
+                <a href="/flime.html">FOR COMPANIES</a>
+                <a href="/for_freelancers.html">FOR FREELANCERS</a>
+            </div>
+
+            <div class="navi navi-collapse">
+                <a href="/security_freelancers.html">Security</a>
+                <a href="/pricing_freelancers.html">Pricing</a>
+                <!--<a href="#">API</a>-->
+                <a href="/about_us_freelancers.html">About us</a>
+                <a href="/contacts_freelancers.html">Contacts</a>
+            </div>
+            <a href="#"
+               class="btn btn-navy font-size-md strong btn-login"
+               onclick="goToSignUp(event)"
+            >
+                Log in/Sign up
+            </a>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section-pricing section-mrgns">
+   <div class="container">
+       <h1 class="text-center mrgn-b-lg2">Pricing</h1>
+        <div class="sub-title text-center font-size-lg mrgn-b-lg2">International payments are up to 50% cheaper than wire transfers</div>
+
+       <div class="flex-row flex-space-center flex-items-center flex-wrap">
+           <div class="section-pricing__box text-center">
+               <div class="section-pricing__title strong text-uppercase">
+                   for first<br/>
+                   three months
+               </div>
+               <div class="section-pricing__sum strong mrgn-b-md">
+                   <sup>€</sup> 0
+               </div>
+               <div class="section-pricing__box--content">
+                   <p>e-invoicing</p>
+                   <p>
+                       national tax compliance procedures (for EU and Russian residents)
+                   </p>
+                   <p>
+                       automated KYC
+                   </p>
+                   <p>
+                       possible payment methods (depends on the region of the Freelancer)
+                   </p>
+                   <p>
+                       invoices and reports for each task
+                   </p>
+                   <p>
+                       self-registration
+                   </p>
+               </div>
+           </div>
+           <div class="section-pricing__box text-center primary-bg pdng-t-lg_10 pdng-b-lg_10">
+               <div class="section-pricing__title strong text-uppercase">
+                   per<br/>
+                   month
+               </div>
+               <div class="section-pricing__sum strong mrgn-b-md">
+                   <sup>€</sup> 3
+               </div>
+               <div class="section-pricing__box--content mrgn-b-lg">
+                   <p>e-invoicing</p>
+                   <p>
+                       national tax compliance procedures (for EU and Russian residents)
+                   </p>
+                   <p>
+                       automated KYC
+                   </p>
+                   <p>
+                       possible payment methods (depends on the region of the Freelancer)
+                   </p>
+                   <p>
+                       invoices and reports for each task
+                   </p>
+                   <p>
+                       self-registration
+                   </p>
+               </div>
+               <a href="https://app.flime.com/freelancer/invite-check" class="btn text-uppercase letter-spacing-1 btn-yellow">Sign Up for free</a>
+           </div>
+           <div class="section-pricing__box text-center">
+               <div class="section-pricing__title strong text-uppercase">
+                   forever<br/>
+                   if invited by customer
+               </div>
+               <div class="section-pricing__sum strong mrgn-b-md">
+                   <sup>€</sup> 0
+               </div>
+               <div class="section-pricing__box--content">
+                   <p>e-invoicing</p>
+                   <p>
+                       national tax compliance procedures (for EU and Russian residents)
+                   </p>
+                   <p>
+                       automated KYC
+                   </p>
+                   <p>
+                       possible payment methods (depends on the region of the Freelancer)
+                   </p>
+                   <p>
+                       invoices and reports for each task
+                   </p>
+                   <p>
+                       self-registration
+                   </p>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+
+<footer class="footer navy-bg pdng-v-lg3">
+    <div class="container">
+        <div class="flex-row">
+            <div class="pull-left">
+                <a href="/flime.html" class="footer-logo">
+                    <img src="img/flime_logo_white.svg" alt="">
+                </a>
+                <p>
+                    Invoice customers worldwide
+                </p>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-nav-title mrgn-b-sm">Legal Resources</div>
+                <div class="footer-nav-link mrgn-b-sm">
+                    <a href="#0" onclick="window.open('https://flime.com/assets/privacy_policy.doc', '_blank');">Privacy Policy</a>
+                </div>
+                <div class="footer-nav-link mrgn-b-sm">
+                    <a href="#0" onclick="window.open('https://flime.com/assets/offer_agreement.doc', '_blank');">Client Agreement</a>
+                </div>
+                <div class="footer-nav-link mrgn-b-sm">
+                    <a href="#0" onclick="window.open('https://flime.com/assets//assets/freelancer_agreement.doc', '_blank');">Freelancer Agreement</a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-nav-title mrgn-b-sm">Company</div>
+                <div class="footer-nav-link mrgn-b-sm"><a href="/how_it_works.html" c>How it works</a></div>
+                <div class="footer-nav-link mrgn-b-sm"><a href="/pricing.html">Pricing</a></div>
+                <div class="footer-nav-link mrgn-b-sm"><a href="/api.html">API</a></div>
+                <div class="footer-nav-link mrgn-b-sm"><a href="/relability.html">Reliability</a></div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-nav-title mrgn-b-sm">Follow us</div>
+                <ul class="footer-nav-soc flex-row">
+                    <li><a target="_blank" href="https://www.facebook.com/flimecom"><img src="img/fb.svg" alt=""></a>
+                    </li>
+                    <li><a target="_blank" href="https://www.linkedin.com/company/flimecom/"><img src="img/in.svg"
+                                                                                                  alt=""></a></li>
+                    <li><a target="_blank" href="https://twitter.com/Rpogodaev"><img src="img/tw.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2018 Flime B.V. The Netherlands
+        </div>
+    </div>
+
+</footer>
+
+<script type="application/javascript">
+    function getCookieValue(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+    }
+
+    var email = getCookieValue('email');
+
+    window.intercomSettings = {
+        app_id: "ua9ba44d",
+        email: typeof(email) != "undefined" ? decodeURIComponent(email) : null
+    };
+</script>
+<script type="application/javascript">(function () {
+    var w = window;
+    var ic = w.Intercom;
+    if (typeof ic === "function") {
+        ic('reattach_activator');
+        ic('update', intercomSettings);
+    } else {
+        var d = document;
+        var i = function () {
+            i.c(arguments)
+        };
+        i.q = [];
+        i.c = function (args) {
+            i.q.push(args)
+        };
+        w.Intercom = i;
+
+        function l() {
+            var s = d.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://widget.intercom.io/widget/ua9ba44d';
+            var x = d.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        }
+
+        if (w.attachEvent) {
+            w.attachEvent('onload', l);
+        } else {
+            w.addEventListener('load', l, false);
+        }
+    }
+})()</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1964198530539421');
+    fbq('track', 'PageView');
+
+    function goToSignUp(e, url = 'https://app.flime.com') {
+        e.preventDefault();
+
+        fbq('track', 'CompleteRegistration');
+
+        setTimeout(function () {
+            window.open(url, '_self');
+        }, 100);
+    }
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1964198530539421&ev=PageView&noscript=1"
+    /></noscript>
+<!-- End Facebook Pixel Code -->
+
+<script type="text/javascript">
+    _linkedin_partner_id = "564882";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+    (function(){var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=564882&fmt=gif" />
+</noscript>
+</body>
+</html>

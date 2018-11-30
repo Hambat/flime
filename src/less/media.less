@@ -1,0 +1,42 @@
+// Breakpoints
+@highdensity: ~"only screen and (-webkit-min-device-pixel-ratio: 1.5)",
+~"only screen and (min--moz-device-pixel-ratio: 1.5)",
+~"only screen and (-o-min-device-pixel-ratio: 3/2)",
+~"only screen and (min-device-pixel-ratio: 1.5)";
+@mobile-sm:   ~"only screen and (max-width: 580px)";
+@mobile:      ~"only screen and (max-width: 766px)";
+@tablet:      ~"only screen and (max-width: 992px)";
+@desktop:     ~"only screen and (max-width: 1230px)";
+@desktop-xl:  ~"only screen and (max-width: 1300px)";
+
+
+//body {
+//  &:after { /*This adds a label in the top-left corner that displays the current media query state.*/
+//    background: red;
+//    content: "undefined";
+//    left: 0;
+//    padding: .5em 1em;
+//    position: absolute;
+//    text-align: center;
+//    bottom: 0;
+//    z-index: 99;
+//
+//    @media @desktop-xl {
+//      background: blue;
+//      content: "desktop-xl (max-width: 1300px)";
+//      color: #fff;
+//    }
+//    @media @desktop {
+//      background: green;
+//      content: "desktop (max-width: 1230px)";
+//    }
+//    @media @tablet {
+//      background: purple;
+//      content: "tablet and (max-width: 991px)";
+//    }
+//    @media @mobile {
+//      background: orange;
+//      content: "mobile and (max-width: 766px)";
+//    }
+//  }
+//}

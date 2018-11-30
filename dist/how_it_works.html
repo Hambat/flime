@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicons/favicon.png">
+    <link rel="mask-icon" href="img/favicons/favicon.svg">
+    <link rel="icon" sizes="16x16" type="image/svg+xml" href="img/favicons/favicon.svg">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Flime</title>
+    <script src="js/scripts.js"></script>
+
+</head>
+<body>
+<div class="cookies-box pdng-v-md navy-bg">
+    <div class="container flex-row flex-items-center">
+            <span class="mrgn-r-lg">
+                We use cookies to personalize contents and ads, offer social media features, and analyze access to our website. In your browser settings you can delete any already placed cookies. Please see our privacy statement for details about how we use data.
+            </span>
+        <button type="button" class="btn btn-ghost cookies-box__accept cookies-box__btn transition-ease btn-small">Accept</button>
+    </div>
+    <div class="cookies-box__close transition-ease"></div>
+</div>
+
+<header class="header mrgn-t-md">
+    <div class="container flex-row flex-items-center">
+        <a href="/flime.html" class="header-logo">
+            <img src="img/flime_logo_light.svg" alt="">
+        </a>
+
+        <div class="flex-row flex-items-center flex-space-beetween mrgn-l-lg">
+            <div class="navi navi-for">
+                <a href="/flime.html">FOR COMPANIES</a>
+                <a href="/for_freelancers.html">FOR FREELANCERS</a>
+            </div>
+
+            <div class="navi navi-collapse">
+                <a href="/how_it_works.html">How it works</a>
+                <a href="/pricing.html">Pricing</a>
+                <a href="/api.html">API</a>
+                <a href="/relability.html">Relability</a>
+                <a href="/about_us.html">About us</a>
+                <a href="/contacts.html">Contacts</a>
+            </div>
+            <a href="#"
+               class="btn btn-navy font-size-md strong btn-login"
+               onclick="goToSignUp(event)"
+            >
+                Log in/Sign up
+            </a>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="how-it-works section-mrgns">
+    <div class="container">
+        <h1 class="text-center mrgn-b-lg2">How it works?</h1>
+        <ul class="how-it-works__list">
+            <li class="how-it-works__box flex-row flex-wrap flex-space-beetween mrgn-b-lg2">
+                <div class="pull-left mrgn-t-lg2">
+                    <div class="how-it-works__box--title mrgn-b-sm">
+                        Invite your freelance team
+                    </div>
+                    Send a single email to your freelancer or upload a CSV file to send a bulky invitation. After
+                    agreeing with the public offer and ID verification, your freelancer then becomes a subcontractor of
+                    Flime. More precisely, Flime acts as your general contractor.
+                </div>
+                <div class="pull-right">
+                    <img src="img/how_it_works/flime_invite_freelancer.png" alt="flime_invite_freelancer">
+                </div>
+            </li>
+            <li class="how-it-works__box flex-row flex-wrap flex-space-beetween mrgn-b-lg2">
+                <div class="pull-left mrgn-t-lg2">
+                    <div class="how-it-works__box--title mrgn-b-sm">
+                        Set the task
+                    </div>
+                    Type a detailed description, indicate the cost of the work and tick a box to get the IP rights for
+                    the result (if needed). This information allows us to generate proper accounting documents for you.
+                    Upload a CSV file for a bulky task list to save even more time.
+                </div>
+                <div class="pull-right">
+                    <img src="img/how_it_works/flime_new_task.png" alt="flime_new_task">
+                </div>
+            </li>
+            <li class="how-it-works__box flex-row flex-wrap flex-space-beetween mrgn-b-lg2">
+                <div class="pull-left mrgn-t-lg2">
+                    <div class="how-it-works__box--title mrgn-b-sm">
+                        Freelancer ID verification
+                    </div>
+                    Freelancers have to pass a KYC procedure before they start working on your tasks to verify their
+                    identity. This gives us information we need to keep your relationships compliant according to yours
+                    and your freelancer’s local tax regimes.
+                </div>
+                <div class="pull-right">
+                    <img src="img/how_it_works/flime_verification.png" alt="flime_verification">
+                </div>
+            </li>
+            <li class="how-it-works__box flex-row flex-wrap flex-space-beetween mrgn-b-lg2">
+                <div class="pull-left mrgn-t-lg2">
+                    <div class="how-it-works__box--title mrgn-b-sm">
+                        Balance Top-Up
+                    </div>
+                    To accept the result of the work you have to first top-up your balance in Flime via bank transfer.
+                    Specify the amount, download the invoice, and transfer the money from your corporate bank account.
+                    The invoice is paid according to the contract you sign with Flime during the registration.
+                </div>
+                <div class="pull-right">
+                    <img src="img/how_it_works/flime_topup_balance.png" alt="flime_topup_balance">
+                </div>
+            </li>
+            <li class="how-it-works__box flex-row flex-wrap flex-space-beetween mrgn-b-lg2">
+                <div class="pull-left mrgn-t-lg2">
+                    <div class="how-it-works__box--title mrgn-b-sm">
+                        Make a payment
+                    </div>
+                    When the job has been done and your balance is replenished, just click the «pay» button to send the
+                    money to the freelancer.
+                </div>
+                <div class="pull-right">
+                    <img src="img/how_it_works/flime_payout.png" alt="flime_payout">
+                </div>
+            </li>
+        </ul>
+        <div class="how-it-works__box flex-row flex-wrap flex-space-center mrgn-b-lg2">
+            <div class="pull-left mrgn-t-lg2">
+                <div class="flex-row flex-space-center flex-items-center mrgn-b-sm">
+                    <img src="img/check.svg" alt="" class="check-mark mrgn-r-sm">
+                    <div class="how-it-works__box--title not-counter">
+                        Get all the papers you need
+                    </div>
+                </div>
+                At the beginning of the next month, you will receive reports for the previous period straight into your
+                Flime account. This is available to download and print if needed.
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="primary-bg pdng-v-lg3" id="request-access">
+    <div class="container flex-row flex-direction-column flex-items-center">
+        <div class="h1 mrgn-b-sm">Request access form</div>
+        <div class="sub-title font-size-lg mrgn-b-lg_10">
+            Our customer service will contact you ASAP after submitting the form below
+        </div>
+        <form class="form flex-row flex-direction-column" method="post" action="/send.php">
+            <div class="form-group">
+                <label class="form-group__label" for="question">Send us a question</label>
+                <input type="text" id="question" name="question" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="form-group__label" for="email">E-mail</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-yellow strong mrgn-t-md">REQUEST ACCESS</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer navy-bg pdng-v-lg3">
+    <div class="container">
+        <div class="flex-row">
+            <div class="pull-left">
+                <a href="/flime.html" class="footer-logo">
+                    <img src="img/flime_logo_white.svg" alt="">
+                </a>
+                <p>
+                    Online platform to manage contractors. Worldwide.
+                </p>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-nav-title mrgn-b-sm">Legal Resources</div>
+                <div class="footer-nav-link mrgn-b-sm">
+                    <a href="#0" onclick="window.open('https://flime.com/assets/privacy_policy.doc', '_blank');">Privacy Policy</a>
+                </div>
+                <div class="footer-nav-link mrgn-b-sm">
+                    <a href="#0" onclick="window.open('https://flime.com/assets/offer_agreement.doc', '_blank');">Client Agreement</a>
+                </div>
+                <div class="footer-nav-link mrgn-b-sm">
+                    <a href="#0" onclick="window.open('https://flime.com/assets//assets/freelancer_agreement.doc', '_blank');">Freelancer Agreement</a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-nav-title mrgn-b-sm">Company</div>
+                <div class="footer-nav-link mrgn-b-sm"><a href="/how_it_works.html" c>How it works</a></div>
+                <div class="footer-nav-link mrgn-b-sm"><a href="/pricing.html">Pricing</a></div>
+                <div class="footer-nav-link mrgn-b-sm"><a href="/api.html">API</a></div>
+                <div class="footer-nav-link mrgn-b-sm"><a href="/relability.html">Reliability</a></div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-nav-title mrgn-b-sm">Follow us</div>
+                <ul class="footer-nav-soc flex-row">
+                    <li><a target="_blank" href="https://www.facebook.com/flimecom"><img src="img/fb.svg" alt=""></a>
+                    </li>
+                    <li><a target="_blank" href="https://www.linkedin.com/company/flimecom/"><img src="img/in.svg"
+                                                                                                  alt=""></a></li>
+                    <li><a target="_blank" href="https://twitter.com/Rpogodaev"><img src="img/tw.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2018 Flime B.V. The Netherlands
+        </div>
+    </div>
+
+</footer>
+
+<script type="application/javascript">
+    function getCookieValue(name) {
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) return parts.pop().split(";").shift();
+    }
+
+    var email = getCookieValue('email');
+
+    window.intercomSettings = {
+        app_id: "ua9ba44d",
+        email: typeof(email) != "undefined" ? decodeURIComponent(email) : null
+    };
+</script>
+
+<script type="application/javascript">(function () {
+    var w = window;
+    var ic = w.Intercom;
+    if (typeof ic === "function") {
+        ic('reattach_activator');
+        ic('update', intercomSettings);
+    } else {
+        var d = document;
+        var i = function () {
+            i.c(arguments)
+        };
+        i.q = [];
+        i.c = function (args) {
+            i.q.push(args)
+        };
+        w.Intercom = i;
+
+        function l() {
+            var s = d.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://widget.intercom.io/widget/ua9ba44d';
+            var x = d.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        }
+
+        if (w.attachEvent) {
+            w.attachEvent('onload', l);
+        } else {
+            w.addEventListener('load', l, false);
+        }
+    }
+})()</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1964198530539421');
+    fbq('track', 'PageView');
+
+    function goToSignUp(e, url = 'https://app.flime.com') {
+        e.preventDefault();
+
+        fbq('track', 'CompleteRegistration');
+
+        window.open(url, '_self');
+    }
+</script>
+
+
+<noscript>
+    <img height="1" width="1" style="display:none"
+               src="https://www.facebook.com/tr?id=1964198530539421&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<script type="text/javascript">
+    _linkedin_partner_id = "564882";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+    (function(){var s = document.getElementsByTagName("script")[0];
+        var b = document.createElement("script");
+        b.type = "text/javascript";b.async = true;
+        b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+        s.parentNode.insertBefore(b, s);})();
+</script>
+
+<noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=564882&fmt=gif" />
+</noscript>
+</body>
+</html>

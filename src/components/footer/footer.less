@@ -1,7 +1,6 @@
 @import "../../less/variables";
 .footer {
   color: white;
-
   .pull-left {
     max-width: 190px;
     margin-right: 150px;
@@ -52,6 +51,14 @@
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+}
+
+@media @tablet {
+  .footer {
+    .container {
+      flex-wrap: wrap;
     }
   }
 }
